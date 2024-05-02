@@ -1,0 +1,41 @@
+:root {
+    --fs-13:13px;
+    --fs-17: 17px;
+    /* color */
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-Gry: #B3B3B3;
+    --clr-purpl: #6E6BFF;
+    --clr-shadow: #00000066;
+    --clr-shadaowWhite: #00000040;
+    --clr-lightBlack: #131313;
+    --clr-white75:#FFFFFFBF;
+    --clr-white10: #2A2A2A;
+}
+.color-white10{
+    background: var(--clr-white10);
+}
+.color-white75{
+    color: var(--clr-white75);
+}
+.color-lightblack{
+    background: var(--clr-lightBlack);
+}
+
+.color-black {
+    color: var(--clr-black);
+}
+
+.color-gry {
+    color: var(--clr-Gry);
+}
+
+.color-white {
+    color: var(--clr-white);
+}
+.text-13{
+    font-size: var(--fs-13);
+}
+.text-17 {
+    font-size: var(--fs-17);
+}
