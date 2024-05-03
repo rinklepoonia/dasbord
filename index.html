@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dasbord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -213,14 +219,112 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ===================slider============ -->
-                        <!-- <div>
-                                    <h2 class="ff_saira ff-semibold lh_38 text-24 color-white">Featured NFTs</h2>
-                                    <p class="ff_saira fw-bold text-13 lh-21 color-white ">Popular</p>
-                                </div> -->
-
-
-                        <!-- </div> -->
+                        <!-- =======================slider=================== -->
+                        <div class="d-flex justify-content-between mt_22 mb-4">
+                            <h2 class="ff_saira fw-semibold text-22 lh-35 color-white mb-0">Featured NFTs</h2>
+                            <div class="d-flex align-items-center gap_12">
+                                <button class="popular_btn d-flex justify-content-between align-items-center">
+                                    <p class="ff_saira fw-bold text-13 lh-21 color-white mb-0">Popular</p>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.51439 7.58063C5.43368 7.66114 5.36964 7.75678 5.32595 7.86208C5.28226 7.96737 5.25977 8.08025 5.25977 8.19425C5.25977 8.30825 5.28226 8.42113 5.32595 8.52643C5.36964 8.63173 5.43368 8.72737 5.51439 8.80788L11.3455 14.639C11.4097 14.7033 11.4859 14.7543 11.5698 14.7891C11.6536 14.8239 11.7436 14.8418 11.8344 14.8418C11.9252 14.8418 12.0151 14.8239 12.099 14.7891C12.1828 14.7543 12.259 14.7033 12.3232 14.639L18.1543 8.80788C18.4941 8.46813 18.4941 7.92038 18.1543 7.58063C17.8146 7.24088 17.2668 7.24088 16.9271 7.58063L11.8378 12.6699L6.74164 7.5737C6.40189 7.24089 5.85414 7.24089 5.51439 7.58063Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <div class="d-flex align-items-center gap_12">
+                                    <div class="slider_btnBox d-flex justify-content-center align-items-center prev">
+                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.59124 13.3606C7.51073 13.4413 7.41509 13.5054 7.3098 13.5491C7.2045 13.5927 7.09162 13.6152 6.97762 13.6152C6.86362 13.6152 6.75074 13.5927 6.64544 13.5491C6.54015 13.5054 6.44451 13.4413 6.364 13.3606L0.532847 7.52946C0.46857 7.46531 0.417576 7.38912 0.382782 7.30524C0.347988 7.22136 0.330079 7.13145 0.330079 7.04064C0.330079 6.94983 0.347988 6.85991 0.382782 6.77604C0.417576 6.69216 0.46857 6.61597 0.532847 6.55182L6.364 0.720669C6.70375 0.380923 7.2515 0.380923 7.59124 0.720669C7.93099 1.06042 7.93099 1.60817 7.59124 1.94792L2.50199 7.03717L7.59818 12.1334C7.93099 12.4731 7.93099 13.0209 7.59124 13.3606Z"
+                                                fill="#95979980" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider_btnBox d-flex justify-content-center align-items-center next">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.20563 13.3606C1.28614 13.4413 1.38178 13.5054 1.48708 13.5491C1.59237 13.5927 1.70525 13.6152 1.81925 13.6152C1.93325 13.6152 2.04614 13.5927 2.15143 13.5491C2.25673 13.5054 2.35237 13.4413 2.43288 13.3606L8.26403 7.52946C8.3283 7.46531 8.3793 7.38912 8.41409 7.30524C8.44889 7.22136 8.4668 7.13145 8.4668 7.04064C8.4668 6.94983 8.44889 6.85991 8.41409 6.77604C8.3793 6.69216 8.3283 6.61597 8.26403 6.55182L2.43288 0.720669C2.09313 0.380923 1.54538 0.380923 1.20563 0.720669C0.865884 1.06042 0.865884 1.60817 1.20563 1.94792L6.29489 7.03717L1.1987 12.1334C0.865885 12.4731 0.865885 13.0209 1.20563 13.3606Z"
+                                                fill="#95979980" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dasbord_slider">
+                            <div class="slider_box">
+                                <img class="w-100 mb_18" src="./assets/images/svg/slider-img1.svg" alt="slider-img1">
+                                <div class="d-flex justify-content-between mb_13">
+                                    <p class="ff_saira fw-semibold text-18 lh-28 color-white mb-0">Ready Players</p>
+                                    <img src="./assets/images/svg/heart-white-img.svg" alt="heart-white-img">
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mb_13">
+                                    <img src="./assets/images/svg/slider-girl-img.svg" alt="slider-girl-img">
+                                    <p class="ff_quick fw-medium text-12 lh-15 color-white80 mb-0">@Debbie111</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb_21">
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">Last Bid</p>
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">1.57 ETH</p>
+                                </div>
+                                <button
+                                    class="ff_saira fw-medium text-16 lh-25 color-white slider_gridentbtn text-nowrap">Place
+                                    a bid</button>
+                            </div>
+                            <div class="slider_box">
+                                <img class="w-100 mb_18" src="./assets/images/svg/slider-img1.svg" alt="slider-img1">
+                                <div class="d-flex justify-content-between mb_13">
+                                    <p class="ff_saira fw-semibold text-18 lh-28 color-white mb-0">Ready Players</p>
+                                    <img src="./assets/images/svg/heart-white-img.svg" alt="heart-white-img">
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mb_13">
+                                    <img src="./assets/images/svg/slider-girl-img.svg" alt="slider-girl-img">
+                                    <p class="ff_quick fw-medium text-12 lh-15 color-white80 mb-0">@Debbie111</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb_21">
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">Last Bid</p>
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">1.57 ETH</p>
+                                </div>
+                                <button
+                                    class="ff_saira fw-medium text-16 lh-25 color-white slider_gridentbtn text-nowrap">Place
+                                    a bid</button>
+                            </div>
+                            <div class="slider_box">
+                                <img class="w-100 mb_18" src="./assets/images/svg/slider-img1.svg" alt="slider-img1">
+                                <div class="d-flex justify-content-between mb_13">
+                                    <p class="ff_saira fw-semibold text-18 lh-28 color-white mb-0">Ready Players</p>
+                                    <img src="./assets/images/svg/heart-white-img.svg" alt="heart-white-img">
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mb_13">
+                                    <img src="./assets/images/svg/slider-girl-img.svg" alt="slider-girl-img">
+                                    <p class="ff_quick fw-medium text-12 lh-15 color-white80 mb-0">@Debbie111</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb_21">
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">Last Bid</p>
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">1.57 ETH</p>
+                                </div>
+                                <button
+                                    class="ff_saira fw-medium text-16 lh-25 color-white slider_gridentbtn text-nowrap">Place
+                                    a bid</button>
+                            </div>
+                            <div class="slider_box">
+                                <img class="w-100 mb_18" src="./assets/images/svg/slider-img1.svg" alt="slider-img1">
+                                <div class="d-flex justify-content-between mb_13">
+                                    <p class="ff_saira fw-semibold text-18 lh-28 color-white mb-0">Ready Players</p>
+                                    <img src="./assets/images/svg/heart-white-img.svg" alt="heart-white-img">
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mb_13">
+                                    <img src="./assets/images/svg/slider-girl-img.svg" alt="slider-girl-img">
+                                    <p class="ff_quick fw-medium text-12 lh-15 color-white80 mb-0">@Debbie111</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb_21">
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">Last Bid</p>
+                                    <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">1.57 ETH</p>
+                                </div>
+                                <button class="ff_saira fw-medium text-16 lh-25 color-white slider_gridentbtn text-nowrap">Place
+                                    a bid</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xl-4 col-12">
                         <h2 class="ff_saira ff-semibold lh_38 text-24 color-white mt_20">My Wallet</h2>
@@ -267,11 +371,10 @@
                             <div class="d-flex justify-content-between mb-3">
                                 <!-- <p class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048 <span
                                         class="text-24 lh-30 color-white">ETH</span></p> -->
-                                <p class="mb-0"><span
-                                        class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048 </span><span
-                                        class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span></p>
-                            <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green"> 2.013 </span><span
-                                    class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span></p>
+                                <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048
+                                    </span><span class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span></p>
+                                <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green"> 2.013
+                                    </span><span class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span></p>
                             </div>
                             <div class="d-flex justify-content-between">
                                 <img src="./assets/images/png/green-graph.png" alt="green-graph">
@@ -283,10 +386,16 @@
                 </div>
             </div>
         </div>
-        </div>
+        <!-- </div> -->
 
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

@@ -79,12 +79,20 @@
     line-height: 25px;
 }
 
+.lh-28 {
+    line-height: 28px;
+}
+
 .lh-30 {
     line-height: 30px;
 }
 
 .lh-31 {
     line-height: 31px;
+}
+
+.lh-35 {
+    line-height: 35px;
 }
 
 .lh_38 {
@@ -373,16 +381,20 @@
 .gap_80 {
     gap: 80px;
 }
-.mb_10{
+
+.mb_10 {
     margin-bottom: 10px;
 }
-.mb_25{
+
+.mb_25 {
     margin-bottom: 25px;
 }
-.mb_35{
+
+.mb_35 {
     margin-bottom: 35px;
 }
-.mb_17{
+
+.mb_17 {
     margin-bottom: 17px;
 }
 
@@ -420,6 +432,98 @@
     z-index: -1;
 }
 
+
+/* ===================slider================ */
+.gap_12 {
+    gap: 12px;
+}
+
+.mt_22 {
+    margin-top: 22px;
+}
+
+.mb_18 {
+    margin-bottom: 18px;
+}
+
+.mb_13 {
+    margin-bottom: 13px;
+}
+
+.mb_21 {
+    margin-bottom: 21px;
+}
+
+.popular_btn {
+    background: var(--clr-btngry);
+    border-radius: 8px;
+    width: 138.86px;
+    height: 36px;
+    padding: 7.5px 16px 7.5px 23.3px;
+    border: 1px solid transparent;
+}
+
+.slider_btnBox {
+    width: 36px;
+    height: 36px;
+    border: 1.11px solid var(--clr-borderGry);
+    border-radius: 12px;
+    transition: all 0.2s linear;
+}
+
+.slider_btnBox:hover {
+    background: var(--clr-white18);
+}
+
+.slider_btnBox:hover svg path {
+    fill: var(--clr-white);
+}
+
+.slider_box {
+    position: relative;
+    max-width: 242px;
+    min-height: 383px;
+    padding: 29px 22px 21px 24px;
+    z-index: 1;
+    margin-bottom: 22px;
+}
+
+.slider_box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    max-width: 395px;
+    /* min-height: 402px; */
+    border-radius: 8px;
+    padding: 1.74px;
+    border-style: solid;
+    border: 1.74px solid transparent;
+    border: 1.74px solid;
+    border-image: linear-gradient(141.79deg, #822946 10.72%, rgba(41, 42, 184, 0.9) 17.8%, #6A69C2 30.06%, rgba(138, 123, 128, 0.85) 58.45%, #000000 100%)1;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    /* -webkit-mask-composite: xor; */
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.slider_gridentbtn {
+    background: linear-gradient(65.58deg, rgba(0, 66, 255, 0.5) -11.84%, rgba(235, 0, 27, 0.5) 98.75%)padding-box;
+    max-width: 188px;
+    min-height: 41px;
+    padding: 8px 54px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.slider_gridentbtn:hover {
+    background: linear-gradient(65.58deg, rgba(235, 0, 27, 0.5) 98.75%, rgba(0, 66, 255, 0.5) -11.84%) padding-box;
+}
+
+/* .min_vh_100 {
+    min-height: calc(100vh - 95px) !important;
+} */
 
 
 @media (max-width:991.99px) {
