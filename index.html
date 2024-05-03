@@ -127,7 +127,7 @@
                         <div
                             class="d-flex justify-content-between color-white10 max_w_288 min_w_288 input_modification position- relative">
                             <input type="search"
-                                class="ff_quick fw-medium text-13 lh_17 color-white75 color-white10 border_none"
+                                class="ff_quick fw-medium text-13 lh_17 color-white75 color-white10 border_none w-100"
                                 placeholder="Search">
                             <img src="./assets/images/svg/seach-icon.svg" alt="seach-icon">
                         </div>
@@ -321,65 +321,145 @@
                                     <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">Last Bid</p>
                                     <p class="ff_quick fw-medium text-14 lh_17 color-white40 mb-0">1.57 ETH</p>
                                 </div>
-                                <button class="ff_saira fw-medium text-16 lh-25 color-white slider_gridentbtn text-nowrap">Place
+                                <button
+                                    class="ff_saira fw-medium text-16 lh-25 color-white slider_gridentbtn text-nowrap">Place
                                     a bid</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-12">
-                        <h2 class="ff_saira ff-semibold lh_38 text-24 color-white mt_20">My Wallet</h2>
-                        <div class="wallet_box mt-4">
-                            <p class="ff_quick fw-medium text-16 lh_20 color-gry text-center mb_10">Your Balance</p>
-                            <p class="ff_saira fw-semibold text-16 lh-25 color-white text-center mb_25">ETH <span
-                                    class="text-36 lh-57">21.533.10</span></p>
-                            <div class="d-flex justify-content-center align-items-center gap_90 mb_35">
-                                <div class="d-flex align-items-center gap_15">
-                                    <img src="./assets/images/svg/ETH.svg" alt="ETH.">
-                                    <p class="ff_inter fw-normal text-16 lh-19 color-lightgry mb-0 text-center">Ethereum
-                                        <span class="color-white"> ETH</span>
+                        <div class="wallet">
+                            <h2 class="ff_saira ff-semibold lh_38 text-24 color-white mt_20">My Wallet</h2>
+                            <div class="wallet_box mt-4">
+                                <p class="ff_quick fw-medium text-16 lh_20 color-gry text-center mb_10">Your Balance</p>
+                                <p class="ff_saira fw-semibold text-16 lh-25 color-white text-center mb_25">ETH <span
+                                        class="text-36 lh-57">21.533.10</span></p>
+                                <div class="d-flex justify-content-center align-items-center gap_90 mb_35">
+                                    <div class="d-flex align-items-center gap_15">
+                                        <img src="./assets/images/svg/ETH.svg" alt="ETH.">
+                                        <p class="ff_inter fw-normal text-16 lh-19 color-lightgry mb-0 text-center">
+                                            Ethereum
+                                            <span class="color-white"> ETH</span>
+                                        </p>
+                                    </div>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.6057 7.09996C4.53737 7.16812 4.48315 7.24909 4.44617 7.33823C4.40918 7.42737 4.39014 7.52293 4.39014 7.61944C4.39014 7.71595 4.40918 7.81151 4.44617 7.90065C4.48315 7.98979 4.53737 8.07076 4.6057 8.13892L9.54219 13.0754C9.59649 13.1298 9.661 13.173 9.73201 13.2025C9.80301 13.2319 9.87914 13.2471 9.95601 13.2471C10.0329 13.2471 10.109 13.2319 10.18 13.2025C10.251 13.173 10.3155 13.1298 10.3698 13.0754L15.3063 8.13892C15.5939 7.8513 15.5939 7.38758 15.3063 7.09996C15.0187 6.81234 14.555 6.81234 14.2674 7.09996L9.95895 11.4084L5.64465 7.09409C5.35703 6.81234 4.89332 6.81234 4.6057 7.09996Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="d-flex justify-content-center gap_80 mb_17">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20.5" cy="20.5" r="20.5" fill="#0DDC85" fill-opacity="0.12" />
+                                            <path
+                                                d="M28.0914 28.0924V12.9072H24.2951V28.0924H28.0914ZM22.397 28.0924V17.6526H18.6007V28.0924H22.397ZM16.7025 28.0924V20.4998H12.9062V28.0924H16.7025Z"
+                                                fill="#0DDB84" />
+                                        </svg>
+                                        <p class="ff_quick fw-medium text-14 lh_17 color-gry mb-0">Earnings</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20.5" cy="20.5" r="20.5" fill="#FF0000" fill-opacity="0.12" />
+                                            <path
+                                                d="M28.0914 28.0924V12.9072H24.2951V28.0924H28.0914ZM22.397 28.0924V17.6526H18.6007V28.0924H22.397ZM16.7025 28.0924V20.4998H12.9062V28.0924H16.7025Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                        <p class="ff_quick fw-medium text-14 lh_17 color-gry mb-0">Spendings</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <!-- <p class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048 <span
+                                            class="text-24 lh-30 color-white">ETH</span></p> -->
+                                    <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048
+                                        </span><span class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span>
+                                    </p>
+                                    <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green"> 2.013
+                                        </span><span class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span>
                                     </p>
                                 </div>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.6057 7.09996C4.53737 7.16812 4.48315 7.24909 4.44617 7.33823C4.40918 7.42737 4.39014 7.52293 4.39014 7.61944C4.39014 7.71595 4.40918 7.81151 4.44617 7.90065C4.48315 7.98979 4.53737 8.07076 4.6057 8.13892L9.54219 13.0754C9.59649 13.1298 9.661 13.173 9.73201 13.2025C9.80301 13.2319 9.87914 13.2471 9.95601 13.2471C10.0329 13.2471 10.109 13.2319 10.18 13.2025C10.251 13.173 10.3155 13.1298 10.3698 13.0754L15.3063 8.13892C15.5939 7.8513 15.5939 7.38758 15.3063 7.09996C15.0187 6.81234 14.555 6.81234 14.2674 7.09996L9.95895 11.4084L5.64465 7.09409C5.35703 6.81234 4.89332 6.81234 4.6057 7.09996Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                            <div class="d-flex justify-content-center gap_80 mb_17">
-                                <div class="d-flex align-items-center gap-3">
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20.5" cy="20.5" r="20.5" fill="#0DDC85" fill-opacity="0.12" />
-                                        <path
-                                            d="M28.0914 28.0924V12.9072H24.2951V28.0924H28.0914ZM22.397 28.0924V17.6526H18.6007V28.0924H22.397ZM16.7025 28.0924V20.4998H12.9062V28.0924H16.7025Z"
-                                            fill="#0DDB84" />
-                                    </svg>
-                                    <p class="ff_quick fw-medium text-14 lh_17 color-gry mb-0">Earnings</p>
-                                </div>
-                                <div class="d-flex align-items-center gap-3">
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20.5" cy="20.5" r="20.5" fill="#FF0000" fill-opacity="0.12" />
-                                        <path
-                                            d="M28.0914 28.0924V12.9072H24.2951V28.0924H28.0914ZM22.397 28.0924V17.6526H18.6007V28.0924H22.397ZM16.7025 28.0924V20.4998H12.9062V28.0924H16.7025Z"
-                                            fill="#FF0000" />
-                                    </svg>
-                                    <p class="ff_quick fw-medium text-14 lh_17 color-gry mb-0">Spendings</p>
+                                <div class="d-flex justify-content-between">
+                                    <img src="./assets/images/png/green-graph.png" alt="green-graph">
+                                    <img src="./assets/images/png/red-graph.png" alt="red-graph">
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <!-- <p class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048 <span
-                                        class="text-24 lh-30 color-white">ETH</span></p> -->
-                                <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048
-                                    </span><span class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span></p>
-                                <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green"> 2.013
-                                    </span><span class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span></p>
+                        </div>
+                        <!-- ================Recent-Transactions======= -->
+                        <h2 class="ff_saira fw-semibold text-24 lh_38 color-white mt_17 mb-0">Recent Transactions</h2>
+                        <div class="recent_box">
+                            <div class="sub_recent_box">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap_8">
+                                        <img src="./assets/images/svg/recent1.svg" alt="recent1">
+                                        <div class="blank">
+                                            <p class="ff_quick fw-semibold text-17 lh-21 color-white mb-0">0,15 BTC</p>
+                                            <p class="ff_inter fw-normal text-10 lh-12 color-lightgreyy mb-0">$16.533.10
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="ff_quick fw-semibold text-16 lh_20 color-white mb-0">- $60</p>
+                                </div>
+                                <div class="border_recent_bottom w-100 mt_16 mb_11"></div>
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <img src="./assets/images/png/green-graph.png" alt="green-graph">
-                                <img src="./assets/images/png/red-graph.png" alt="red-graph">
-                            </div>
+                                <div class="sub_recent_box">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center gap_8">
+                                            <img src="./assets/images/svg/recent2.svg" alt="recent2">
+                                            <div class="blank">
+                                                <p class="ff_quick fw-semibold text-17 lh-21 color-white mb-0">0,33 BTC</p>
+                                                <p class="ff_inter fw-normal text-10 lh-12 color-lightgreyy mb-0">$33.511.10
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="ff_quick fw-semibold text-16 lh_20 color-white mb-0">-$1260</p>
+                                    </div>
+                                    <div class="border_recent_bottom w-100 mt_16 mb_11"></div>
+                                </div>
+                                    <div class="sub_recent_box">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center gap_8">
+                                                <img src="./assets/images/svg/recent3.svg" alt="recent3">
+                                                <div class="blank">
+                                                    <p class="ff_quick fw-semibold text-17 lh-21 color-white mb-0">0,55 BTC</p>
+                                                    <p class="ff_inter fw-normal text-10 lh-12 color-lightgreyy mb-0">$21.533.10
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="ff_quick fw-semibold text-16 lh_20 color-white mb-0">-$2360</p>
+                                        </div>
+                                        <div class="border_recent_bottom w-100 mt_16 mb_11"></div>
+                                    </div>
+                                        <div class="sub_recent_box">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center gap_8">
+                                                    <img src="./assets/images/svg/recent1.svg" alt="recent1">
+                                                    <div class="blank">
+                                                        <p class="ff_quick fw-semibold text-17 lh-21 color-white mb-0">0,01 BTC</p>
+                                                        <p class="ff_inter fw-normal text-10 lh-12 color-lightgreyy mb-0">$21.533.10
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="ff_quick fw-semibold text-16 lh_20 color-white mb-0">-$630</p>
+                                            </div>
+                                            <div class="border_recent_bottom w-100 mt_16 mb_11"></div>
+                                        </div>
+                                            <div class="sub_recent_box">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center gap_8">
+                                                        <img src="./assets/images/svg/recent3.svg" alt="recent3">
+                                                        <div class="blank">
+                                                            <p class="ff_quick fw-semibold text-17 lh-21 color-white mb-0">0,55 BTC</p>
+                                                            <p class="ff_inter fw-normal text-10 lh-12 color-lightgreyy mb-0">$21.533.10
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="ff_quick fw-semibold text-16 lh_20 color-white mb-0">-$2360</p>
+                                                </div>
+                                                <!-- <div class="border_recent_bottom w-100 mt_16"></div> -->
+                                            </div>
                         </div>
 
                     </div>

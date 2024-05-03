@@ -55,6 +55,10 @@
 }
 
 /* ==========line-height============ */
+.lh-12 {
+    line-height: 12px;
+}
+
 .lh-15 {
     line-height: 15px;
 }
@@ -405,8 +409,8 @@
     /* border-image: linear-gradient(142.65deg, #822946 12.89%, rgba(41, 42, 184, 0.9) 21.4%, #6A69C2 36.15%, rgba(138, 123, 128, 0.85) 70.29%, #000000 120.25%)1; */
     /* border-radius: 8px; */
     padding: 16px 16px 12px 17px;
+    background: var(--clr-black);
     z-index: 1;
-
 }
 
 .wallet_box {
@@ -524,6 +528,56 @@
 /* .min_vh_100 {
     min-height: calc(100vh - 95px) !important;
 } */
+/* ================Recent Transactions=============== */
+.mt_17 {
+    margin-top: 17px;
+}
+
+.mt_16 {
+    margin-top: 16.88px;
+}
+.mb_11{
+    margin-bottom: 11.47px;
+}
+
+.gap_8 {
+    gap: 8px;
+}
+
+.recent_box {
+    position: relative;
+    z-index: 1;
+    max-width: 397px;
+    min-height: 383px;
+    border-radius: 8px;
+    padding: 21.46px 20px 25.46px 20px;
+    margin-top: 26px;
+}
+
+.recent_box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    max-width: 395px;
+    /* min-height: 402px; */
+    border-radius: 8px;
+    padding: 1.74px;
+    border-style: solid;
+    border: 1.74px solid transparent;
+    border: 1.74px solid;
+    border-image: linear-gradient(141.79deg, #822946 10.72%, rgba(41, 42, 184, 0.9) 17.8%, #6A69C2 30.06%, rgba(138, 123, 128, 0.85) 58.45%, #000000 100%)1;
+    /* border-image-source: linear-gradient(141.79deg, #822946 10.72%, rgba(41, 42, 184, 0.9) 17.8%, #6A69C2 30.06%, rgba(138, 123, 128, 0.85) 58.45%, #000000 100%); */
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    /* -webkit-mask-composite: xor; */
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.border_recent_bottom {
+    border-bottom: 0.82px solid var(--clr-lightgreyy);
+}
 
 
 @media (max-width:991.99px) {

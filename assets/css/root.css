@@ -1,4 +1,5 @@
 :root {
+    --fs-10: 10px;
     --fs-12: 12px;
     --fs-13: 13px;
     --fs-14: 14px;
@@ -31,7 +32,11 @@
     --clr-red: #FF0000;
     --clr-btngry: #A2A3A42E;
     --clr-borderGry: #95979980;
+   --clr-lightgreyy: #A2A3A4;
 
+}
+.color-lightgreyy{
+    color: var(--clr-lightgreyy);
 }
 
 .color-white40 {
@@ -88,6 +93,10 @@
 
 .color-white {
     color: var(--clr-white);
+}
+
+.text-10 {
+    font-size: var(--fs-10);
 }
 
 .text-12 {
