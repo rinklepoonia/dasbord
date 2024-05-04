@@ -389,6 +389,7 @@
     padding: 16px 16px 12px 17px;
     background: var(--clr-black);
     z-index: 1;
+    min-height: 402px;
 }
 
 .wallet_box {
@@ -399,7 +400,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    /* max-width: 395px; */
     min-height: 402px;
     border-radius: 8px;
     padding: 1.74px;
@@ -507,7 +507,6 @@
 #slider_dasbord .slick-slide {
     display: flex !important;
     justify-content: center !important;
-    /* align-items: center !important; */
 }
 
 /* ================Recent Transactions=============== */
@@ -625,6 +624,10 @@
 }
 
 @media (max-width:576px) {
+    .max_w_100 {
+        max-width: 100px;
+    }
+
     .justify_content_center {
         justify-content: center;
     }
@@ -635,6 +638,10 @@
 
     .gap_20 {
         gap: 20px;
+    }
+
+    .gap_35 {
+        gap: 35px;
     }
 
     .mt-15 {
@@ -683,6 +690,12 @@
 @media (max-width:1040px) {
     .object_fit {
         object-fit: contain;
+    }
+}
+
+@media (max-width:1300.99px) {
+    .gap-80 {
+        gap: 80px;
     }
 }
 
