@@ -191,7 +191,6 @@
 
 .border_bottom {
     border-bottom: 1.11px solid var(--clr-Gry);
-    /* margin: 40px 0 0 0; */
 }
 
 .dark_mode_blue {
@@ -211,7 +210,8 @@
 }
 
 .dropdown_modification {
-    background: var(--clr-white);
+    background: var(--clr-black);
+    border: 1px solid var(--clr-white);
     width: 170px;
     padding: 10px;
     border-radius: 10px;
@@ -224,6 +224,42 @@
     opacity: 1;
     position: relative;
 }
+
+.dropdown-modification {
+    width: 170px;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    position: relative;
+    left: -82px;
+    top: 42px;
+    z-index: -1;
+}
+
+#btnn2.active.dropdown-modification {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.slect_property {
+    background: var(--clr-btngry);
+    border-radius: 8px;
+    /* width: 138.86px;
+    height: 36px; */
+    padding: 7.5px 16px 7.5px 23.3px;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+/* .popular_btn {
+    background: var(--clr-btngry);
+    border-radius: 8px;
+    width: 138.86px;
+    height: 36px;
+    padding: 7.5px 16px 7.5px 23.3px;
+    border: 1px solid transparent;
+} */
 
 .position_sidenav {
     left: 0;
@@ -386,7 +422,7 @@
 }
 
 .wallet_box {
-    padding: 19px 16px 17px 17px;
+    padding: 16px 16px 1px 17px;
     background: var(--clr-black);
     z-index: 1;
     min-height: 402px;
@@ -582,7 +618,7 @@
 
     .menuIcon.show>span {
         top: -8px;
-        left: -197%;
+        left: -242px;
         position: relative;
     }
 
@@ -611,6 +647,14 @@
     .ml_30 {
         margin-left: 30px;
     }
+
+    .mt_-100 {
+        margin-top: -100px;
+    }
+
+    /* .position_sidenav {
+        top: 98px;
+    } */
 }
 
 @media (min-width:576px) {

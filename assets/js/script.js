@@ -15,6 +15,10 @@ function openNav() {
     document.querySelector(".menuIcon").classList.toggle("cross")
     document.querySelector(".menuIcon").classList.toggle("show")
 }
+function toggle() {
+    const btnn2 = document.getElementById('btnn2');
+    btnn2.classList.toggle("active");
+}
 
 $('.dasbord_slider').slick({
     dots: false,

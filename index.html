@@ -19,7 +19,7 @@
 <body>
     <section class="hero_bg">
         <!-- =======================sidenav================= -->
-        <div class="position-relative position_sidenav">
+        <div class="position-relative position_sidenav ">
             <div class="color_lightblack nav_parent max_w_256 pr_12 min_vh_100 position_fixed z-2">
                 <img class="mt-4 pl_sm_45 pl_10" src="./assets/images/svg/dasbord-logo.svg" alt="/dasbord-logo">
                 <div id="navbar" class="pl_24  menulist ">
@@ -68,13 +68,13 @@
                                 <img src="./assets/images/svg/plus-icon-img.svg" alt="plus-icon-img">
                                 <p class="ff_quick fw-normal text-17 lh_20 color-gry mb-0">WALLETS</p>
                             </div>
-                            <div class="Dropdown position-relative ">
+                            <div class="Dropdown position-relative cursor_pointer">
                                 <div onClick="toggleClass()">
                                     <img src="./assets/images/svg/deopdown.svg" alt="deopdown">
                                 </div>
                                 <div id="btnn"
-                                    class="d-flex flex-column gap-2 position-absolute dropdown_modification right_3">
-                                    <span class="ff_quick fw-normal text-17 lh_20 color-black mb-0">my-item</span>
+                                    class="d-flex flex-column gap-2 position-absolute dropdown_modification right_3 cursor_pointer">
+                                    <span class="ff_quick fw-normal text-17 lh_20 color-white mb-0">My-Coins</span>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
         </div>
         <!-- =======================nav===================== -->
         <div class="min-vh-100 position-relative pl_270">
-            <nav class="color-lightblack h_95 w-100 d-flex align-items-center position-relative z-1">
+            <nav class="color-lightblack h_95 w-100 d-flex align-items-center position-relative z-1 mt_-100">
                 <div class="w-100">
                     <div class="d-flex justify-content-between align-items-center flex-wrap pl_29">
                         <div
@@ -203,7 +203,8 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="d-flex gap-xl-4 gap-2 flex_wrap justify_content_center mt_117 mt_60 mt-30">
+                                    <div
+                                        class="d-flex gap-xl-4 gap-2 flex_wrap justify_content_center mt_117 mt_60 mt-30">
                                         <button
                                             class="ff_saira fw-semibold text-16 lh-25 color-white btnn_modification">View
                                             Rewards</button>
@@ -215,20 +216,38 @@
                             </div>
                         </div>
                         <!-- =======================slider=================== -->
-                        <div class="d-flex flex_wrap gap-4 justify_content_center justify-content-sm-between mt_22 mb-4">
+                        <div
+                            class="d-flex flex_wrap gap-4 justify_content_center justify-content-sm-between mt_22 mb-4">
                             <h2 class="ff_saira fw-semibold text-22 lh-35 color-white mb-0">Featured NFTs</h2>
                             <div class="d-flex align-items-center gap_12">
-                                <button class="popular_btn d-flex justify-content-between align-items-center">
-                                    <p class="ff_saira fw-bold text-13 lh-21 color-white mb-0">Popular</p>
-                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.51439 7.58063C5.43368 7.66114 5.36964 7.75678 5.32595 7.86208C5.28226 7.96737 5.25977 8.08025 5.25977 8.19425C5.25977 8.30825 5.28226 8.42113 5.32595 8.52643C5.36964 8.63173 5.43368 8.72737 5.51439 8.80788L11.3455 14.639C11.4097 14.7033 11.4859 14.7543 11.5698 14.7891C11.6536 14.8239 11.7436 14.8418 11.8344 14.8418C11.9252 14.8418 12.0151 14.8239 12.099 14.7891C12.1828 14.7543 12.259 14.7033 12.3232 14.639L18.1543 8.80788C18.4941 8.46813 18.4941 7.92038 18.1543 7.58063C17.8146 7.24088 17.2668 7.24088 16.9271 7.58063L11.8378 12.6699L6.74164 7.5737C6.40189 7.24089 5.85414 7.24089 5.51439 7.58063Z"
-                                            fill="white" />
-                                    </svg>
-                                </button>
+                                <div class="Dropdown position-relative cursor_pointer padiing">
+                                    <select id="btnn2"
+                                        class="w-100 slect_property ff_quick fw-normal text-17 lh_20 color-white mb-0 cursor_pointer">
+                                        <span onClick="toggle()" class="pe-3">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.51439 7.58063C5.43368 7.66114 5.36964 7.75678 5.32595 7.86208C5.28226 7.96737 5.25977 8.08025 5.25977 8.19425C5.25977 8.30825 5.28226 8.42113 5.32595 8.52643C5.36964 8.63173 5.43368 8.72737 5.51439 8.80788L11.3455 14.639C11.4097 14.7033 11.4859 14.7543 11.5698 14.7891C11.6536 14.8239 11.7436 14.8418 11.8344 14.8418C11.9252 14.8418 12.0151 14.8239 12.099 14.7891C12.1828 14.7543 12.259 14.7033 12.3232 14.639L18.1543 8.80788C18.4941 8.46813 18.4941 7.92038 18.1543 7.58063C17.8146 7.24088 17.2668 7.24088 16.9271 7.58063L11.8378 12.6699L6.74164 7.5737C6.40189 7.24089 5.85414 7.24089 5.51439 7.58063Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                        <option value="TH/s" class="ff_saira popular_btn  mb-0 bg-black cursor_pointer">
+                                            Popular
+                                        </option>
+                                        <option value="TH/s"
+                                            class="ff_quick fw-normal text-17 lh_20 color-white mb-0 bg-black cursor_pointer">
+                                            Ready Players</option>
+                                        <option value="TH/s"
+                                            class="ff_quick fw-normal text-17 lh_20 color-white mb-0 bg-black cursor_pointer">
+                                            Dragon’s Den</option>
+                                        <option value="TH/s"
+                                            class="ff_quick fw-normal text-17 lh_20 color-white mb-0 bg-black cursor_pointer">
+                                            Crippled World</option>
+                                    </select>
+                                </div>
                                 <div class="d-flex align-items-center gap_12">
-                                    <div class="slider_btnBox d-flex justify-content-center align-items-center prev">
+                                    <div
+                                        class="slider_btnBox d-flex justify-content-center align-items-center prev cursor_pointer">
                                         <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -236,7 +255,8 @@
                                                 fill="#95979980" />
                                         </svg>
                                     </div>
-                                    <div class="slider_btnBox d-flex justify-content-center align-items-center next">
+                                    <div
+                                        class="slider_btnBox d-flex justify-content-center align-items-center next cursor_pointer">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -367,7 +387,8 @@
                                         <p class="ff_quick fw-medium text-14 lh_17 color-gry mb-0">Spendings</p>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-xxl-between justify-content-center mb-3 gap-80 gap_35">
+                                <div
+                                    class="d-flex justify-content-xxl-between justify-content-center mb-3 gap-80 gap_35">
                                     <p class="mb-0"><span class="ff_oxanium fw-bold text-32 lh-40 color-green">7.048
                                         </span><span class="ff_oxanium fw-bold text-12 lh-15 color-white"> ETH</span>
                                     </p>
