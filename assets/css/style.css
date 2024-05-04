@@ -504,6 +504,12 @@
     min-height: calc(100vh-95px) !important;
 }
 
+#slider_dasbord .slick-slide {
+    display: flex !important;
+    justify-content: center !important;
+    /* align-items: center !important; */
+}
+
 /* ================Recent Transactions=============== */
 .mt_17 {
     margin-top: 17px;
@@ -524,7 +530,6 @@
 .recent_box {
     position: relative;
     z-index: 1;
-    /* max-width: 397px; */
     min-height: 383px;
     border-radius: 8px;
     padding: 21.46px 20px 25.46px 20px;
@@ -535,19 +540,14 @@
     content: "";
     position: absolute;
     inset: 0;
-    /* max-width: 395px; */
-    /* min-height: 402px; */
     border-radius: 8px;
     padding: 1.74px;
     border-style: solid;
-    /* border: 1.74px solid transparent; */
     border: 1.74px solid;
     border-image: linear-gradient(141.79deg, #822946 10.72%, rgba(41, 42, 184, 0.9) 17.8%, #6A69C2 30.06%, rgba(138, 123, 128, 0.85) 58.45%, #000000 100%)1;
-    /* border-image-source: linear-gradient(141.79deg, #822946 10.72%, rgba(41, 42, 184, 0.9) 17.8%, #6A69C2 30.06%, rgba(138, 123, 128, 0.85) 58.45%, #000000 100%); */
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-    /* -webkit-mask-composite: xor; */
     mask-composite: exclude;
     z-index: -1;
 }
@@ -614,8 +614,6 @@
     }
 }
 
-
-
 @media (min-width:576px) {
     .left_sm_33 {
         left: 33%;
@@ -638,10 +636,12 @@
     .gap_20 {
         gap: 20px;
     }
-    .mt-15{
+
+    .mt-15 {
         margin-top: 15px;
     }
-    .mt-30{
+
+    .mt-30 {
         margin-top: 30px;
     }
 }
