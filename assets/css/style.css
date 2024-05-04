@@ -386,7 +386,7 @@
 }
 
 .wallet_box {
-    padding: 16px 16px 12px 17px;
+    padding: 19px 16px 17px 17px;
     background: var(--clr-black);
     z-index: 1;
     min-height: 402px;
